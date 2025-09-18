@@ -17,11 +17,12 @@ const Card: React.FC = () => {
       />
 
       {/* Pill Section */}
-      <div className="p-2 flex gap-2 mt-2">
-        <Pill title="Top Villa" />
-        <Pill title="Self CheckIn" />
-        <Pill title="Free Reschedule" />
-      </div>
+       <div className="border p-4 rounded-lg shadow-md w-64">
+      <h2 className="text-lg font-semibold mb-3">Card Component</h2>
+      <Pill title="First Pill" />
+      <Pill title="Second Pill" />
+      <Pill title="Third Pill" />
+    </div>
 
       {/* Title and Rating */}
       <div className="flex items-center justify-between">
