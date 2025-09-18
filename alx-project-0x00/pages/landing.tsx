@@ -12,7 +12,6 @@ const Landing: React.FC = () => {
       <div className="flex flex-wrap gap-6">
         <Card />
         <Card />
-        {/* Duplicate cards as needed */}
       </div>
 
       {/* Buttons Section */}
