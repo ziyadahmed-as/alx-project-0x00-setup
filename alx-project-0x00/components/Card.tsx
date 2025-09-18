@@ -1,6 +1,4 @@
 import Image from "next/image"
-import HOUSE_IMAGE from "@/public/assets/house.png"
-import STAR_IMAGE from "@/public/assets/star.png"
 import React from "react"
 import Pill from "./Pill"
 
@@ -10,29 +8,36 @@ const Card: React.FC = () => {
       {/* House Image */}
       <Image
         className="rounded-lg"
-        src={HOUSE_IMAGE}
+        src="/assets/images/house.jpeg" // ✅ Direct path from public folder
         width={378.56}
         height={299.37}
         alt="house image"
       />
 
       {/* Pill Section */}
-       <div className="border p-4 rounded-lg shadow-md w-64">
-      <h2 className="text-lg font-semibold mb-3">Card Component</h2>
-      <Pill title="First Pill" />
-      <Pill title="Second Pill" />
-      <Pill title="Third Pill" />
-    </div>
+      <div className="border p-4 rounded-lg shadow-md w-64 mt-3">
+        <h2 className="text-lg font-semibold mb-3">Card Component</h2>
+        <Pill title="First Pill" />
+        <Pill title="Second Pill" />
+        <Pill title="Third Pill" />
+      </div>
 
       {/* Title and Rating */}
-      <div className="flex items-center justify-between">
+      <div className="flex items-center justify-between mt-3">
         <div>
           <h3 className="font-semibold text-[22px]">Villa Arrecife Beach House</h3>
-          <p className="font-medium text=[17px] text-[#929292]">Sideman, Bali, Indonesia</p>
+          <p className="font-medium text-[17px] text-[#929292]">
+            Sideman, Bali, Indonesia
+          </p>
         </div>
         <div className="flex items-center">
-          <Image src={STAR_IMAGE} alt="star" />
-          <p className="font-medium text=[17px] ml-2">4.76</p>
+          <Image
+            src="/assets/images/star.jpeg" // ✅ Direct path from public folder
+            alt="star"
+            width={20}
+            height={20}
+          />
+          <p className="font-medium text-[17px] ml-2">4.76</p>
         </div>
       </div>
 
