@@ -8,5 +8,4 @@ const UsersPage: React.FC = () => {
     </div>
   );
 };
-
 export default UsersPage;

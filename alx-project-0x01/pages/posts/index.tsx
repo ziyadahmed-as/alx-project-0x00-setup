@@ -11,7 +11,6 @@ const PostsPage: React.FC = () => {
         title="First Post"
         content="This is an example post created with Tailwind styling."
       />
-
       {/* Another Example */}
       <PostCard
         title="Second Post"
